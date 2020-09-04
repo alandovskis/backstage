@@ -53,7 +53,7 @@ export const plugin = createPlugin({
   id: 'techdocs',
   apis: [
     createApiFactory({
-      implements: techdocsStorageApiRef,
+      api: techdocsStorageApiRef,
       deps: { configApi: configApiRef },
       factory: ({ configApi }) =>
         new TechDocsStorageApi({

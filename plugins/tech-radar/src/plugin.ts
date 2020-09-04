@@ -22,7 +22,7 @@ export const plugin = createPlugin({
   id: 'tech-radar',
   apis: [
     createApiFactory({
-      implements: techRadarApiRef,
+      api: techRadarApiRef,
       deps: {},
       factory: () => new TechRadar({ width: 1500, height: 800 }),
     }),
